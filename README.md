@@ -8,6 +8,7 @@
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-7_of_13-E0C170?style=for-the-badge&labelColor=07111A" alt="Suite: 7 of 13 pass today"></a>
   <a href="./docs/HOW_IT_WORKS.md"><img src="https://img.shields.io/badge/agreement-written_before_code-D7B698?style=for-the-badge&labelColor=07111A" alt="Agreement written before code"></a>
   <a href="https://github.com/andresanemic/vespi"><img src="https://img.shields.io/badge/built_with-Vespi_and_Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Vespi and Lore Plugin"></a>
+  <a href="https://github.com/andresanemic/vespi/tree/ed559e83c976dd6e6a379a5510db776206f670b4"><img src="https://img.shields.io/badge/kernel-0.1.5_candidate-ed559e8?style=for-the-badge&labelColor=07111A&color=E0C170" alt="Kernel: 0.1.5 candidate (commit ed559e8)"></a>
 </p>
 
 <details open>
@@ -112,7 +113,7 @@ Ficha Contigo is not an electronic health record, a clinical system, a provider 
 
 ## Evidence you can open
 
-The supplied current suite record reports **7 passing and 6 failing tests out of 13**. Thirteen cases were written before implementation. In the first red run, twelve behavior cases failed against the module skeleton, while the kernel digest guard passed against the then-pinned cut. A later recorded run reports 13/13 against that cut. The present run is a different result: the project pins each consumed kernel module by digest, and the installed kernel moved after the project was built against cut `54c20c7`. Five behavioral cases now fail and the exact-pin case also fails. The pin has not yet been deliberately reassessed and the suite has not been rerun against a newly chosen cut. This is a visible compatibility check and unfinished work, not a claim that the present suite is green. Details and test names are in [Evidence](./docs/EVIDENCE.md).
+The supplied current suite record reports **7 passing and 6 failing tests out of 13**. Thirteen cases were written before implementation. In the first red run, twelve behavior cases failed against the module skeleton, while the kernel digest guard passed against the then-pinned cut. A later recorded run reports 13/13 against that cut. The present run is a different result: the project pins each consumed kernel module by digest, and the installed kernel moved after the project was built against cut `54c20c7`. Five behavioral cases now fail and the exact-pin case also fails. The pin has not yet been deliberately reassessed and the suite has not been rerun against a newly chosen cut. The project now targets kernel **0.1.5 candidate** (commit `ed559e8`); the re-pinned digest table will be committed once the kernel release is confirmed. This is a visible compatibility check and unfinished work, not a claim that the present suite is green. Details and test names are in [Evidence](./docs/EVIDENCE.md).
 
 The recorded walkthrough covers an in-scope access, blocks for missing or excessive permission, content correction and fingerprint mismatch, revocation, advance-granted emergency access, an open and later closed review, budget and expiry blocks, simulated zero-knowledge flow, receipts and an independent audit. It reports the Stellar anchor as `pending`; nothing reached a network. The records are project evidence, not an external clinical or security audit.
 
@@ -127,7 +128,7 @@ Ficha Contigo is one of the functional projects built on [Vespi](https://github.
 - Its zero-knowledge flow is simulated. There is no real proof, circuit or verifier in this project.
 - It does not establish identity, professional credentials, medical truth, informed consent, legal validity or compliance with any law.
 - The regulation contemplated by article 13 of Law 21.668 was not read or verified, and no competent legal professional has reviewed the project.
-- The present suite needs a deliberate kernel re-pin and a fresh run. Passing tests and a recorded walkthrough do not show readiness for clinical use.
+- The present suite needs a deliberate kernel re-pin to **0.1.5 candidate** (`ed559e8`) and a fresh run. Passing tests and a recorded walkthrough do not show readiness for clinical use.
 
 See [Legal and limits](./docs/LEGAL_AND_LIMITS.md) for the legal context and open questions, and [Evidence](./docs/EVIDENCE.md) for the suite status.
 
@@ -247,7 +248,7 @@ Ficha Contigo no es una ficha electrónica, un sistema clínico, una integració
 
 ## Evidencia que puedes abrir
 
-El registro de la suite actual informa **7 pruebas aprobadas y 6 fallidas de un total de 13**. Los trece casos se escribieron antes de la implementación. En la primera corrida roja fallaron doce casos de comportamiento frente al esqueleto del módulo, mientras que la comprobación del digest del kernel pasó contra el corte fijado entonces. Una corrida registrada posterior informa 13/13 contra ese corte. La corrida actual da otro resultado: el proyecto fija por digest cada módulo del kernel que consume, y el kernel instalado cambió después de que el proyecto se construyera contra el corte 54c20c7. Hoy fallan cinco casos de comportamiento y también el caso que comprueba la fijación exacta. La fijación aún no se ha reevaluado de forma deliberada y la suite no se ha vuelto a correr contra un corte nuevo elegido. Es una comprobación visible de compatibilidad y trabajo pendiente, no una suite verde. [Evidencia](./docs/EVIDENCE.md) detalla los nombres y resultados.
+El registro de la suite actual informa **7 pruebas aprobadas y 6 fallidas de un total de 13**. Los trece casos se escribieron antes de la implementación. En la primera corrida roja fallaron doce casos de comportamiento frente al esqueleto del módulo, mientras que la comprobación del digest del kernel pasó contra el corte fijado entonces. Una corrida registrada posterior informa 13/13 contra ese corte. La corrida actual da otro resultado: el proyecto fija por digest cada módulo del kernel que consume, y el kernel instalado cambió después de que el proyecto se construyera contra el corte 54c20c7. Hoy fallan cinco casos de comportamiento y también el caso que comprueba la fijación exacta. La fijación aún no se ha reevaluado de forma deliberada y la suite no se ha vuelto a correr contra un corte nuevo elegido. El proyecto ahora apunta al kernel **0.1.5 candidato** (commit `ed559e8`); la tabla de digest fijada se commiteará una vez confirmado el release del kernel. Es una comprobación visible de compatibilidad y trabajo pendiente, no una suite verde. [Evidencia](./docs/EVIDENCE.md) detalla los nombres y resultados.
 
 El recorrido registrado cubre un acceso dentro del alcance, bloqueos por falta o exceso de permiso, corrección del contenido y diferencia de huellas, revocación, acceso de emergencia concedido antes, una revisión abierta y luego cerrada, bloqueos por presupuesto y vencimiento, flujo de conocimiento cero simulado, recibos y auditoría independiente. El anclaje Stellar figura como `pending`; nada llegó a una red. Son registros del proyecto, no una auditoría clínica ni de seguridad externa.
 
@@ -262,7 +263,7 @@ Ficha Contigo es uno de los proyectos funcionales construidos sobre [Vespi](http
 - El flujo de conocimiento cero es simulado. Este proyecto no tiene una prueba real, circuito ni verificador.
 - No establece identidad, credenciales profesionales, verdad médica, consentimiento informado, validez legal ni cumplimiento de una norma.
 - El reglamento contemplado por el artículo 13 de la Ley 21.668 no se leyó ni verificó, y ninguna persona competente en derecho ha revisado el proyecto.
-- La suite actual requiere reevaluar deliberadamente la fijación del kernel y hacer una corrida nueva. Las pruebas que pasan y el recorrido registrado no demuestran que esté listo para uso clínico.
+- La suite actual requiere reevaluar deliberadamente la fijación del kernel al **0.1.5 candidato** (`ed559e8`) y hacer una corrida nueva. Las pruebas que pasan y el recorrido registrado no demuestren que esté listo para uso clínico.
 
 Consulta [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) para el contexto jurídico y las preguntas abiertas, y [Evidencia](./docs/EVIDENCE.md) para el estado de la suite.
 
