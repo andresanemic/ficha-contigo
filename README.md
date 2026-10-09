@@ -12,9 +12,7 @@
 </p>
 
 <p align="center"><b>Ficha Contigo</b> — a patient cannot see who opened which part of their clinical record, or why.<br>
-The person grants access with limits, emergency access is agreed in advance, and every access is checked. Evidence: 13/13 tests. Fictional patients and data. Chilean Law 21.668.<br>
-<b>Ficha Contigo</b> — una paciente no ve quién abrió qué parte de su ficha clínica ni para qué.<br>
-La persona da acceso con límites, el acceso de emergencia se acuerda antes y cada acceso se comprueba. Evidencia: 13/13 pruebas. Pacientes y datos ficticios. Ley 21.668 de Chile.</p>
+The person grants access with limits, emergency access is agreed in advance, and every access is checked. Evidence: 13/13 tests. Fictional patients and data. Chilean Law 21.668.</p>
 
 <details open>
 <summary><b>Read in English</b></summary>
@@ -159,6 +157,9 @@ Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests 
 <summary><b>Leer en español</b></summary>
 
 <a id="espanol"></a>
+
+<p align="center"><b>Ficha Contigo</b> — una paciente no ve quién abrió qué parte de su ficha clínica ni para qué.<br>
+La persona da acceso con límites, el acceso de emergencia se acuerda antes y cada acceso se comprueba. Evidencia: 13/13 pruebas. Pacientes y datos ficticios. Ley 21.668 de Chile.</p>
 
 **Ficha Contigo hace visible la decisión de la paciente sobre quién puede abrir cada parte de una ficha clínica, para qué y por cuánto tiempo.**
 
