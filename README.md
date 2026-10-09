@@ -11,6 +11,11 @@
   <a href="https://github.com/andresanemic/vespi/tree/ed559e83c976dd6e6a379a5510db776206f670b4"><img src="https://img.shields.io/badge/kernel-0.1.5_release-ed559e8?style=for-the-badge&labelColor=07111A&color=E0C170" alt="Kernel: 0.1.5 release (commit ed559e8)"></a>
 </p>
 
+<p align="center"><b>Ficha Contigo</b> — a patient cannot see who opened which part of their clinical record, or why.<br>
+The person grants access with limits, emergency access is agreed in advance, and every access is checked. Evidence: 13/13 tests. Fictional patients and data. Chilean Law 21.668.<br>
+<b>Ficha Contigo</b> — una paciente no ve quién abrió qué parte de su ficha clínica ni para qué.<br>
+La persona da acceso con límites, el acceso de emergencia se acuerda antes y cada acceso se comprueba. Evidencia: 13/13 pruebas. Pacientes y datos ficticios. Ley 21.668 de Chile.</p>
+
 <details open>
 <summary><b>Read in English</b></summary>
 
