@@ -121,6 +121,8 @@ The recorded walkthrough covers an in-scope access, blocks for missing or excess
 
 Ficha Contigo is one of the functional projects built on [Vespi](https://github.com/andresanemic/vespi) with [Lore Plugin](https://github.com/andresanemic/lore-plugin). It consumes Vespi's kernel without changing it. The project uses the kernel for bounded authority, permission checks, receipts and verification primitives. Its patient-facing language translates kernel states such as `blocked` and `verified` into Spanish reasons and outcomes. The emergency mandate and the obligation to leave a human review open belong to Ficha Contigo's project layer, not to kernel 0.1.3. Its zero-knowledge demonstration is labeled simulated; the kernel verifier for that capability was deferred to 0.1.4.
 
+**What this relationship means.** The project was built with Lore Plugin's method (its agreement and criterion live in the project, in `acuerdo.md` and `lore/`), and its operations, authority and receipts run on the Vespi kernel 0.1.5, in the pinned copy that Lore Plugin 2.5.1 distributes (`skills/vespi/core/kernel`). That copy sits in the project as `vendor/vespi-kernel` and the suite verifies it against its `SOURCE.md`. Lore Plugin does not run inside the project. This project does not use the kernel's newer capabilities (Stellar pubnet anchors, live x402 settlement, the ZK verifier, emergency access); it exercises the core of operations, authority and receipts.
+
 ## What it does not do, and what is not verified
 
 - It does not hold real clinical or identifying data, connect to a provider, implement FHIR or make a real clinical decision.
@@ -255,6 +257,8 @@ El recorrido registrado cubre un acceso dentro del alcance, bloqueos por falta o
 ## Ficha Contigo, Vespi y Lore Plugin
 
 Ficha Contigo es uno de los proyectos funcionales construidos sobre [Vespi](https://github.com/andresanemic/vespi) con [Lore Plugin](https://github.com/andresanemic/lore-plugin). Consume el kernel de Vespi sin modificarlo. El proyecto usa el kernel para autoridad acotada, comprobaciones de permisos, recibos y primitivas de verificación. Su lenguaje para la paciente traduce estados del kernel como `blocked` y `verified` a razones y resultados en español. El mandato de emergencia y la obligación de dejar una revisión humana abierta pertenecen a la capa de Ficha Contigo, no al kernel 0.1.3. La demostración de conocimiento cero se identifica como simulada; el verificador del kernel para esa capacidad quedó para 0.1.4.
+
+**Qué significa esta relación.** El proyecto se construyó con el método de Lore Plugin (su acuerdo y su criterio viven en el proyecto, en `acuerdo.md` y `lore/`), y sus operaciones, autoridad y recibos corren sobre el kernel de Vespi 0.1.5, en la copia fijada que distribuye Lore Plugin 2.5.1 (`skills/vespi/core/kernel`). Esa copia está en el proyecto como `vendor/vespi-kernel` y la suite la verifica contra su `SOURCE.md`. Lore Plugin no corre dentro del proyecto. Este proyecto no usa las capacidades nuevas del kernel (anclas Stellar pubnet, liquidación x402 en vivo, el verificador ZK, el acceso de emergencia); ejerce el núcleo de operaciones, autoridad y recibos.
 
 ## Lo que no hace y lo que no está verificado
 
