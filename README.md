@@ -1,6 +1,8 @@
-[![Ficha Contigo: patient-granted access to a clinical record](./assets/cover.png)](./assets/cover.png)
+<p align="center">
+  <a href="./assets/cover.png"><img src="./assets/cover.png" alt="Ficha Contigo: patient-granted access to a clinical record" width="100%"></a>
+</p>
 
-# Ficha Contigo
+<h1 align="center">Ficha Contigo</h1>
 
 <p align="center">
   <a href="#espanol"><img src="https://img.shields.io/badge/status-working_path-D7B698?style=for-the-badge&labelColor=07111A" alt="Status: working path"></a>
@@ -14,7 +16,14 @@
 <p align="center"><b>Ficha Contigo</b> — a patient cannot see who opened which part of their clinical record, or why.<br>
 The person grants access with limits, emergency access is agreed in advance, and every access is checked. Evidence: 13/13 tests. Fictional patients and data. Chilean Law 21.668.</p>
 
-<details open>
+
+
+<p align="center"><b>We’re applying to the Find Your Way hackathon and plan to participate in Meridian.</b></p>
+<p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./CODE_NOT_INCLUDED.md">Source and review terms</a>.<br>This public snapshot contains documentation and evidence, not runnable source.</p>
+
+---
+
+<details>
 <summary><b>Read in English</b></summary>
 
 <a id="english"></a>
@@ -28,16 +37,6 @@ The person grants access with limits, emergency access is agreed in advance, and
 When a person hands clinical information to an institution, the relationship can become hard to inspect from the patient's side. Which professional asked for which part? For what purpose? What was actually opened? A professional may have a sound reason to ask, but the reason alone does not tell the patient what crossed the boundary. And when the patient cannot answer during an emergency, a team may face an uncomfortable choice between waiting and improvising access.
 
 Ficha Contigo makes that boundary the subject of a small local prototype. The patient grants a named part of a fictional record, for a declared purpose, at a named institution, within a time window and use budget. A separate emergency mandate can be granted beforehand. If used, it leaves an immediate record and a human review that stays open until the patient or a designated reviewer closes it.
-
-## If you are judging Find Your Way or Meridian, start here
-
-Read the project foundation and its walkthrough. Start with [How it works](./docs/HOW_IT_WORKS.md).
-
-Open the test record. See [Evidence](./docs/EVIDENCE.md).
-
-Read the legal and verification limits. See [Legal and limits](./docs/LEGAL_AND_LIMITS.md).
-
-Review the publication conditions. See [Code not included](./docs/CODE_NOT_INCLUDED.md) and the [review-only license](./LICENSE).
 
 ## In one minute
 
@@ -153,8 +152,10 @@ Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests 
 
 </details>
 
-<details open>
+<details>
 <summary><b>Leer en español</b></summary>
+
+<p align="center"><b>Postulamos a la hackatón Find Your Way y planeamos participar en Meridian.</b></p>
 
 <a id="espanol"></a>
 
