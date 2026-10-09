@@ -157,9 +157,6 @@ Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests 
 
 <a id="espanol"></a>
 
-<p align="center"><b>Ficha Contigo</b> — una paciente no ve quién abrió qué parte de su ficha clínica ni para qué.<br>
-La persona da acceso con límites, el acceso de emergencia se acuerda antes y cada acceso se comprueba. Evidencia: 13/13 pruebas. Pacientes y datos ficticios. Ley 21.668 de Chile.</p>
-
 **Ficha Contigo hace visible la decisión de la paciente sobre quién puede abrir cada parte de una ficha clínica, para qué y por cuánto tiempo.**
 
 > **La unidad es la parte de la ficha que la paciente autorizó, para un propósito y hasta una fecha. El acceso de emergencia se concede por adelantado.**
