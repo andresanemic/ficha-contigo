@@ -15,7 +15,7 @@ No competent legal professional has reviewed this project. It does not claim com
 - It does not make a real emergency clinical decision. The fictional emergency flow requires an advance mandate and a later human review.
 - Its zero-knowledge demonstration is simulated. It has no ZK proof, circuit or verifier.
 - Its receipt is not anchored to Stellar. The walkthrough marks the anchor pending and states that nothing reached a network.
-- Its test result does not establish readiness for use. [Evidence](EVIDENCE.md) records the current result and pending re-pin.
+- Its test result does not establish readiness for use. [Evidence](EVIDENCE.md) records the current result and the kernel cut it exercised.
 - The fictional walkthrough cannot establish operation in a real care setting.
 
 ## Open questions
@@ -46,7 +46,7 @@ Ninguna persona competente en derecho ha revisado este proyecto. No afirma cumpl
 - No toma una decisión clínica real de emergencia. El flujo ficticio de emergencia requiere un mandato previo y una revisión humana posterior.
 - Su demostración de conocimiento cero es simulada. No tiene prueba ZK, circuito ni verificador.
 - El recibo no está anclado en Stellar. El recorrido lo marca pendiente e indica que nada llegó a una red.
-- El resultado de las pruebas no demuestra que esté listo para uso. [Evidencia](EVIDENCE.md) informa el resultado actual y la nueva fijación pendiente.
+- El resultado de las pruebas no demuestra que esté listo para uso. [Evidencia](EVIDENCE.md) informa el resultado actual y el corte del kernel que ejerció.
 - El recorrido ficticio no demuestra funcionamiento en un entorno real de atención.
 
 ### Preguntas abiertas

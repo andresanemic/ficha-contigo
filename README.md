@@ -5,7 +5,7 @@
 <p align="center">
   <a href="#espanol"><img src="https://img.shields.io/badge/status-working_path-D7B698?style=for-the-badge&labelColor=07111A" alt="Status: working path"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-review--only-D7B698?style=for-the-badge&labelColor=07111A" alt="License: review only"></a>
-  <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-7_of_13-E0C170?style=for-the-badge&labelColor=07111A" alt="Suite: 7 of 13 pass today"></a>
+  <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-all_13_pass-E0C170?style=for-the-badge&labelColor=07111A" alt="Suite: all 13 tests pass"></a>
   <a href="./docs/HOW_IT_WORKS.md"><img src="https://img.shields.io/badge/agreement-written_before_code-D7B698?style=for-the-badge&labelColor=07111A" alt="Agreement written before code"></a>
   <a href="https://github.com/andresanemic/vespi"><img src="https://img.shields.io/badge/built_with-Vespi_and_Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Vespi and Lore Plugin"></a>
   <a href="https://github.com/andresanemic/vespi/tree/ed559e83c976dd6e6a379a5510db776206f670b4"><img src="https://img.shields.io/badge/kernel-0.1.5_release-ed559e8?style=for-the-badge&labelColor=07111A&color=E0C170" alt="Kernel: 0.1.5 release (commit ed559e8)"></a>
@@ -63,7 +63,7 @@ detail:        access was within the grant and the verifier recomputed it from t
 delivered:     EXAMPLE VALUE: 7.4
 ```
 
-The same permission does not cover another part. The recorded block says the authorization opens `part-1` while the request asks for `part-2`. In the emergency path, the patient has already granted a one-use mandate with a review deadline. The access leaves a pending review; the professional who used it cannot close that review, and the audit does not treat it as closed until the patient side does. The detailed Spanish walkthrough in [How it works](./docs/HOW_IT_WORKS.md) and the recorded evidence in [Evidence](./docs/EVIDENCE.md) show the full sequence.
+The same permission does not cover another part. The recorded block says the authorization opens `part-1` while the request asks for `part-2`. In the emergency path, the patient has already granted a one-use mandate with a review deadline. The access leaves an open review that the professional who used it cannot close, and the audit does not treat it as closed until the patient side does. The detailed Spanish walkthrough in [How it works](./docs/HOW_IT_WORKS.md) and the recorded evidence in [Evidence](./docs/EVIDENCE.md) show the full sequence.
 
 ## How it works
 
@@ -113,7 +113,7 @@ Ficha Contigo is not an electronic health record, a clinical system, a provider 
 
 ## Evidence you can open
 
-The supplied current suite record reports **7 passing and 6 failing tests out of 13**. Thirteen cases were written before implementation. In the first red run, twelve behavior cases failed against the module skeleton, while the kernel digest guard passed against the then-pinned cut. A later recorded run reports 13/13 against that cut. The present run is a different result: the project pins each consumed kernel module by digest, and the installed kernel moved after the project was built against cut `54c20c7`. Five behavioral cases now fail and the exact-pin case also fails. The pin has not yet been deliberately reassessed and the suite has not been rerun against a newly chosen cut. The project now targets kernel **0.1.5 release** (commit `ed559e8`); the digest table remains pending until a deliberate project re-pin and fresh tests are completed. This is a visible compatibility check and unfinished work, not a claim that the present suite is green. Details and test names are in [Evidence](./docs/EVIDENCE.md).
+The supplied current suite record reports **13 tests, 13 pass, 0 skipped**, run on Node v24.15.0. The suite ran in a clean clone of the project, with an empty HOME and no network, against the kernel copied into the project under `vendor/vespi-kernel` and checked module by module against its `SOURCE.md`. Thirteen cases were written before implementation. In the first red run, twelve behavior cases were red against the module skeleton, while the kernel digest guard passed against the then-pinned cut. A later recorded run reports 13/13 against that cut. The 2026-10-03 capture was red for a different reason: the project was still pinned to an older kernel cut (0.1.3), and the kernel is consumed by digest, so the movement showed up in the suite. That pin was reassessed and the project now runs against kernel **0.1.5 release** (commit `ed559e8`); the capture in `docs/suite-2026-10-09.txt` is the result. Details and test names are in [Evidence](./docs/EVIDENCE.md).
 
 The recorded walkthrough covers an in-scope access, blocks for missing or excessive permission, content correction and fingerprint mismatch, revocation, advance-granted emergency access, an open and later closed review, budget and expiry blocks, simulated zero-knowledge flow, receipts and an independent audit. It reports the Stellar anchor as `pending`; nothing reached a network. The records are project evidence, not an external clinical or security audit.
 
@@ -128,13 +128,13 @@ Ficha Contigo is one of the functional projects built on [Vespi](https://github.
 - Its zero-knowledge flow is simulated. There is no real proof, circuit or verifier in this project.
 - It does not establish identity, professional credentials, medical truth, informed consent, legal validity or compliance with any law.
 - The regulation contemplated by article 13 of Law 21.668 was not read or verified, and no competent legal professional has reviewed the project.
-- The present suite needs a deliberate kernel re-pin to **0.1.5 release** (`ed559e8`) and a fresh run. Passing tests and a recorded walkthrough do not show readiness for clinical use.
+- The suite accredits only what its 13 named tests cover. Passing tests and a recorded walkthrough do not show readiness for clinical use.
 
 See [Legal and limits](./docs/LEGAL_AND_LIMITS.md) for the legal context and open questions, and [Evidence](./docs/EVIDENCE.md) for the suite status.
 
 ## How to review this project
 
-Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests and recorded runs in [Evidence](./docs/EVIDENCE.md). Read [Legal and limits](./docs/LEGAL_AND_LIMITS.md) and [Code not included](./docs/CODE_NOT_INCLUDED.md) before drawing conclusions. The source code will be published during the judges' review period under the [review-only license](./LICENSE), which permits reading and cloning for evaluation. When it opens, inspect the kernel digest pin before running `npm test`; a new run should state which kernel cut it exercised.
+Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests and recorded runs in [Evidence](./docs/EVIDENCE.md). Read [Legal and limits](./docs/LEGAL_AND_LIMITS.md) and [Code not included](./docs/CODE_NOT_INCLUDED.md) before drawing conclusions. The source code will be published during the judges' review period under the [review-only license](./LICENSE), which permits reading and cloning for evaluation. When it opens, run `npm test` and compare the result with the recorded capture in `docs/suite-2026-10-09.txt`; a new run should state which kernel cut it exercised.
 
 ## Author
 
@@ -175,7 +175,7 @@ Revisa las condiciones de publicación. Consulta [Código no incluido](./docs/CO
 
 ## En un minuto
 
-En el caso ficticio registrado, `persona-1` tiene tres partes de ejemplo: un resultado de laboratorio, un informe de imagenología y antecedentes personales. `prof-1` pide primero el resultado para dar continuidad al tratamiento. La solicitud se bloquea porque declarar un propósito no equivale a tener permiso. Luego la paciente concede solo esa parte, en una institución, para dos accesos y hasta una fecha definida. Una lectura dentro del alcance queda registrada como verificada y devuelve un valor de ejemplo. Una solicitud del informe de imagenología queda fuera del permiso y se bloquea. Más tarde, la paciente puede revocar la autorización sin borrar la lectura anterior. Para una emergencia ya había concedido otro mandato por adelantado; al ejercerlo se abre una revisión que sigue pendiente hasta que ella la cierra. Todas las personas, instituciones, partes y valores del recorrido son ficticios.
+En el caso ficticio registrado, `persona-1` tiene tres partes de ejemplo: un resultado de laboratorio, un informe de imagenología y antecedentes personales. `prof-1` pide primero el resultado para dar continuidad al tratamiento. La solicitud se bloquea porque declarar un propósito no equivale a tener permiso. Luego la paciente concede solo esa parte, en una institución, para dos accesos y hasta una fecha definida. Una lectura dentro del alcance queda registrada como verificada y devuelve un valor de ejemplo. Una solicitud del informe de imagenología queda fuera del permiso y se bloquea. Más tarde, la paciente puede revocar la autorización sin borrar la lectura anterior. Para una emergencia ya había concedido otro mandato por adelantado; al ejercerlo se abre una revisión que sigue abierta hasta que ella la cierra. Todas las personas, instituciones, partes y valores del recorrido son ficticios.
 
 ## Cómo se ve en la práctica
 
@@ -198,7 +198,7 @@ detalle:      el acceso ocurrió dentro de lo otorgado y el verificador lo recal
 entregado:    VALOR DE EJEMPLO: 7,4
 ```
 
-Ese permiso no cubre otra parte. El bloqueo registrado dice que la autorización abre `parte-1` mientras la solicitud pide `parte-2`. En la ruta de emergencia, la paciente ya había otorgado un mandato de un uso con plazo de revisión. El acceso deja una revisión pendiente; el profesional que lo usó no puede cerrarla y la auditoría no la considera cerrada hasta que lo haga la paciente o alguien designado. [Cómo funciona](./docs/HOW_IT_WORKS.md) presenta el recorrido completo y [Evidencia](./docs/EVIDENCE.md) conserva el registro de lo que se observó.
+Ese permiso no cubre otra parte. El bloqueo registrado dice que la autorización abre `parte-1` mientras la solicitud pide `parte-2`. En la ruta de emergencia, la paciente ya había otorgado un mandato de un uso con plazo de revisión. El acceso deja una revisión abierta; el profesional que lo usó no puede cerrarla y la auditoría no la considera cerrada hasta que lo haga la paciente o alguien designado. [Cómo funciona](./docs/HOW_IT_WORKS.md) presenta el recorrido completo y [Evidencia](./docs/EVIDENCE.md) conserva el registro de lo que se observó.
 
 ## Cómo funciona
 
@@ -248,7 +248,7 @@ Ficha Contigo no es una ficha electrónica, un sistema clínico, una integració
 
 ## Evidencia que puedes abrir
 
-El registro de la suite actual informa **7 pruebas aprobadas y 6 fallidas de un total de 13**. Los trece casos se escribieron antes de la implementación. En la primera corrida roja fallaron doce casos de comportamiento frente al esqueleto del módulo, mientras que la comprobación del digest del kernel pasó contra el corte fijado entonces. Una corrida registrada posterior informa 13/13 contra ese corte. La corrida actual da otro resultado: el proyecto fija por digest cada módulo del kernel que consume, y el kernel instalado cambió después de que el proyecto se construyera contra el corte 54c20c7. Hoy fallan cinco casos de comportamiento y también el caso que comprueba la fijación exacta. La fijación aún no se ha reevaluado de forma deliberada y la suite no se ha vuelto a correr contra un corte nuevo elegido. El proyecto ahora apunta al kernel **0.1.5 publicado** (commit `ed559e8`); la tabla de digest sigue pendiente hasta que se refije deliberadamente el proyecto y se repitan las pruebas. Es una comprobación visible de compatibilidad y trabajo pendiente, no una suite verde. [Evidencia](./docs/EVIDENCE.md) detalla los nombres y resultados.
+El registro actual de la suite informa **13 pruebas, 13 pasan, 0 omitidas**, corridas con Node v24.15.0. La suite se corrió en un clon limpio del proyecto, con HOME vacío y sin red, contra el kernel copiado dentro del proyecto en `vendor/vespi-kernel` y verificado módulo por módulo contra su `SOURCE.md`. Los trece casos se escribieron antes de la implementación. En la primera corrida roja, doce casos de comportamiento quedaron en rojo frente al esqueleto del módulo, mientras que la comprobación del digest del kernel pasó contra el corte fijado entonces. Una corrida registrada posterior informa 13/13 contra ese corte. La captura del 2026-10-03 estaba en rojo por otro motivo: el proyecto seguía fijado a un corte viejo del kernel (0.1.3) y el kernel se consume por digest, así que el movimiento se vio en la suite. Esa fijación se reevaluó y el proyecto ahora corre contra el kernel **0.1.5 publicado** (commit `ed559e8`); la captura en `docs/suite-2026-10-09.txt` es el resultado. [Evidencia](./docs/EVIDENCE.md) detalla los nombres y resultados.
 
 El recorrido registrado cubre un acceso dentro del alcance, bloqueos por falta o exceso de permiso, corrección del contenido y diferencia de huellas, revocación, acceso de emergencia concedido antes, una revisión abierta y luego cerrada, bloqueos por presupuesto y vencimiento, flujo de conocimiento cero simulado, recibos y auditoría independiente. El anclaje Stellar figura como `pending`; nada llegó a una red. Son registros del proyecto, no una auditoría clínica ni de seguridad externa.
 
@@ -263,13 +263,13 @@ Ficha Contigo es uno de los proyectos funcionales construidos sobre [Vespi](http
 - El flujo de conocimiento cero es simulado. Este proyecto no tiene una prueba real, circuito ni verificador.
 - No establece identidad, credenciales profesionales, verdad médica, consentimiento informado, validez legal ni cumplimiento de una norma.
 - El reglamento contemplado por el artículo 13 de la Ley 21.668 no se leyó ni verificó, y ninguna persona competente en derecho ha revisado el proyecto.
-- La suite actual requiere reevaluar deliberadamente la fijación del kernel al **0.1.5 publicado** (`ed559e8`) y hacer una corrida nueva. Las pruebas que pasan y el recorrido registrado no demuestren que esté listo para uso clínico.
+- La suite acredita solo lo que cubren sus 13 pruebas nombradas. Las pruebas que pasan y el recorrido registrado no demuestran que esté listo para uso clínico.
 
 Consulta [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) para el contexto jurídico y las preguntas abiertas, y [Evidencia](./docs/EVIDENCE.md) para el estado de la suite.
 
 ## Cómo revisar este proyecto
 
-Empieza por [Cómo funciona](./docs/HOW_IT_WORKS.md) y luego compara los nombres de las pruebas con las corridas registradas en [Evidencia](./docs/EVIDENCE.md). Lee [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) y [Código no incluido](./docs/CODE_NOT_INCLUDED.md) antes de sacar conclusiones. El código fuente se publicará durante el periodo de revisión de los jueces bajo la [licencia de solo revisión](./LICENSE), que permite leer y clonar para evaluar. Cuando se abra, revisa el digest fijado del kernel antes de ejecutar `npm test`; una corrida nueva debe indicar qué corte del kernel probó.
+Empieza por [Cómo funciona](./docs/HOW_IT_WORKS.md) y luego compara los nombres de las pruebas con las corridas registradas en [Evidencia](./docs/EVIDENCE.md). Lee [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) y [Código no incluido](./docs/CODE_NOT_INCLUDED.md) antes de sacar conclusiones. El código fuente se publicará durante el periodo de revisión de los jueces bajo la [licencia de solo revisión](./LICENSE), que permite leer y clonar para evaluar. Cuando se abra, ejecuta `npm test` y compara el resultado con la captura registrada en `docs/suite-2026-10-09.txt`; una corrida nueva debe indicar qué corte del kernel probó.
 
 ## Autor
 

@@ -4,7 +4,7 @@
 
 Ficha Contigo is a local, terminal-based prototype. It models a patient's control over access to separate parts of a clinical record and writes an inspectable JSONL record. All people, institutions and record contents are fictional; no real health or identifying data is present. No institution is connected and the record does not leave the project.
 
-The project consumes Vespi's kernel without modifying it. The emergency mandate and its review are implemented in the project layer, not in kernel 0.1.3. The zero-knowledge demonstration is simulated, and the receipt's Stellar testnet anchor remains pending: nothing is sent to a network.
+The project consumes Vespi's kernel without modifying it. The emergency mandate and its review are implemented in the project layer, not in the kernel. The zero-knowledge demonstration is simulated, and the receipt's Stellar testnet anchor remains pending: nothing is sent to a network.
 
 ## Actors and boundaries
 
@@ -63,7 +63,7 @@ Each receipt records the requester, purpose, permission, scope, fingerprint open
 
 The prototype demonstrates a local flow for scoped patient authorization, purpose checks, revocation, content fingerprints, receipts, independent recomputation and advance-granted emergency access with an outstanding human review. Its test suite and recorded walkthrough use fictional inputs.
 
-It does not prove that a real clinical system can safely access or store a record, that a provider can integrate it, that a patient or professional's identity is established, that a medical fact is true, or that any law is satisfied. It has no real data, provider integration, FHIR connection, network operation, blockchain anchor or actual zero-knowledge proof. The emergency mandate belongs to the project layer rather than kernel 0.1.3. [`EVIDENCE.md`](EVIDENCE.md) records the suite status and pending kernel re-pin. This prototype shows a working path, not a finished product or readiness for use.
+It does not prove that a real clinical system can safely access or store a record, that a provider can integrate it, that a patient or professional's identity is established, that a medical fact is true, or that any law is satisfied. It has no real data, provider integration, FHIR connection, network operation, blockchain anchor or actual zero-knowledge proof. The emergency mandate belongs to the project layer rather than kernel 0.1.5. [`EVIDENCE.md`](EVIDENCE.md) records the suite status and the kernel cut it exercised. This prototype shows a working path, not a finished product or readiness for use.
 
 ## Related documents
 
@@ -76,7 +76,7 @@ It does not prove that a real clinical system can safely access or store a recor
 
 Ficha Contigo es un prototipo local que funciona desde la terminal. Modela el control de la paciente sobre el acceso a partes separadas de una ficha clínica y escribe un registro JSONL inspeccionable. Todas las personas, instituciones y partes de la ficha son ficticias; no hay datos reales de salud ni datos personales reales. Ninguna institución está conectada y el registro no sale del proyecto.
 
-El proyecto consume el kernel de Vespi sin modificarlo. El mandato de emergencia y su revisión están implementados en la capa del proyecto, no en el kernel 0.1.3. La demostración de conocimiento cero está simulada y el anclaje Stellar del recibo queda pendiente: no se envía nada a una red.
+El proyecto consume el kernel de Vespi sin modificarlo. El mandato de emergencia y su revisión están implementados en la capa del proyecto, no en el kernel. La demostración de conocimiento cero está simulada y el anclaje Stellar del recibo queda pendiente: no se envía nada a una red.
 
 ### Actores y límites
 
@@ -135,7 +135,7 @@ Cada recibo registra quién solicitó, el propósito, el permiso, el alcance, la
 
 El prototipo demuestra un flujo local de autorización de alcance concedida por la paciente, comprobación de propósito, revocación, huellas de contenido, recibos, recálculo independiente y acceso de emergencia otorgado por adelantado con una revisión humana pendiente. La suite de pruebas y el recorrido registrado usan datos ficticios.
 
-No demuestra que un sistema clínico real pueda acceder o guardar una ficha de manera segura, que un prestador pueda integrarse, que se establezca la identidad de una paciente o profesional, que un dato médico sea verdadero ni que se cumpla una ley. No tiene datos reales, integración con prestadores, conexión FHIR, operación de red, anclaje en blockchain ni prueba real de conocimiento cero. El mandato de emergencia pertenece a la capa del proyecto y no al kernel 0.1.3. [`EVIDENCE.md`](EVIDENCE.md) informa el estado de la suite y la nueva fijación del kernel pendiente. Este prototipo muestra un camino que funciona, no un producto terminado ni algo listo para uso.
+No demuestra que un sistema clínico real pueda acceder o guardar una ficha de manera segura, que un prestador pueda integrarse, que se establezca la identidad de una paciente o profesional, que un dato médico sea verdadero ni que se cumpla una ley. No tiene datos reales, integración con prestadores, conexión FHIR, operación de red, anclaje en blockchain ni prueba real de conocimiento cero. El mandato de emergencia pertenece a la capa del proyecto y no al kernel 0.1.5. [`EVIDENCE.md`](EVIDENCE.md) informa el estado de la suite y el corte del kernel que ejerció. Este prototipo muestra un camino que funciona, no un producto terminado ni algo listo para uso.
 
 ### Documentos relacionados
 
