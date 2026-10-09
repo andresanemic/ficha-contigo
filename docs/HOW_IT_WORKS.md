@@ -70,15 +70,15 @@ It does not prove that a real clinical system can safely access or store a recor
 - [Evidence](EVIDENCE.md) lists the named tests and recorded results.
 - [Legal and limits](LEGAL_AND_LIMITS.md) records the cited legal context and open questions.
 
-## Español
+# Español
 
-### Alcance
+## Alcance
 
 Ficha Contigo es un prototipo local que funciona desde la terminal. Modela el control de la paciente sobre el acceso a partes separadas de una ficha clínica y escribe un registro JSONL inspeccionable. Todas las personas, instituciones y partes de la ficha son ficticias; no hay datos reales de salud ni datos personales reales. Ninguna institución está conectada y el registro no sale del proyecto.
 
 El proyecto consume el kernel de Vespi sin modificarlo. El mandato de emergencia y su revisión están implementados en la capa del proyecto, no en el kernel. La demostración de conocimiento cero está simulada y el anclaje Stellar del recibo queda pendiente: no se envía nada a una red.
 
-### Actores y límites
+## Actores y límites
 
 | Actor | Qué puede hacer en este modelo | Límite |
 |---|---|---|
@@ -89,7 +89,7 @@ El proyecto consume el kernel de Vespi sin modificarlo. El mandato de emergencia
 | Profesional de emergencia | Usar un permiso de emergencia que la paciente concedió antes | Sin mandato previo no hay acceso de emergencia. Quien lo usó no puede cerrar su revisión. |
 | Verificador | Recalcular qué permite afirmar el registro, por separado del informe del ejecutor | Verifica el flujo registrado y la integridad del recibo, no la verdad médica, la identidad ni el cumplimiento legal. |
 
-### Una solicitud, de principio a fin
+## Una solicitud, de principio a fin
 
 Supongamos que la paciente ficticia `persona-1` tiene un resultado de laboratorio (`parte-1`), un informe de imagenología (`parte-2`) y antecedentes personales (`parte-3`). `prof-1` pide leer `parte-1` para dar continuidad al tratamiento. La paciente concede acceso a esa parte, para ese propósito, en una institución, hasta un vencimiento y dentro de un presupuesto de usos. Ese permiso no cubre el informe de imagenología ni los antecedentes.
 
@@ -117,7 +117,7 @@ Mandato de emergencia previo -> acceso + recibo inmediato
                               -> paciente/designada la cierra
 ```
 
-### Qué hace cumplir el flujo del acuerdo
+## Qué hace cumplir el flujo del acuerdo
 
 - Una solicitud no es un permiso. Sin autorización coincidente, nada se abre.
 - Cada permiso ordinario se vincula a un propósito, una o más partes específicas, una institución, un vencimiento y un presupuesto de usos.
@@ -131,13 +131,13 @@ Mandato de emergencia previo -> acceso + recibo inmediato
 
 Cada recibo registra quién solicitó, el propósito, el permiso, el alcance, la huella abierta, las comprobaciones del verificador y la huella del contenido. El digest canónico del recibo del kernel lo sella y `verifyReceipt` lo comprueba. El registro es un archivo JSONL local que la paciente puede leer sin el programa.
 
-### Qué demuestra y qué no
+## Qué demuestra y qué no
 
 El prototipo demuestra un flujo local de autorización de alcance concedida por la paciente, comprobación de propósito, revocación, huellas de contenido, recibos, recálculo independiente y acceso de emergencia otorgado por adelantado con una revisión humana pendiente. La suite de pruebas y el recorrido registrado usan datos ficticios.
 
 No demuestra que un sistema clínico real pueda acceder o guardar una ficha de manera segura, que un prestador pueda integrarse, que se establezca la identidad de una paciente o profesional, que un dato médico sea verdadero ni que se cumpla una ley. No tiene datos reales, integración con prestadores, conexión FHIR, operación de red, anclaje en blockchain ni prueba real de conocimiento cero. El mandato de emergencia pertenece a la capa del proyecto y no al kernel 0.1.5. [`EVIDENCE.md`](EVIDENCE.md) informa el estado de la suite y el corte del kernel que ejerció. Este prototipo muestra un camino que funciona, no un producto terminado ni algo listo para uso.
 
-### Documentos relacionados
+## Documentos relacionados
 
 - [Evidencia](EVIDENCE.md) enumera las pruebas y sus resultados registrados.
 - [Marco legal y límites](LEGAL_AND_LIMITS.md) reúne el contexto legal citado y las preguntas abiertas.

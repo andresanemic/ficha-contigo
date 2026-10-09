@@ -48,21 +48,21 @@ The agreement says the law's article 13 regulation was not read or verified. The
 
 During the judges' review period the source will be published under the review-only license. From the project root, run `npm test`. The suite command in the source package is `node --test "test/*.test.js"`. A rerun should give the same count as the recorded run: **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. The full output of that run is the reference and is kept in [`suite-2026-10-09.txt`](suite-2026-10-09.txt). A new run should identify the kernel cut it tested. No network or testnet transaction is part of this procedure.
 
-## Español
+# Español
 
-### Suite actual
+## Suite actual
 
 La corrida registrada del 2026-10-09 informa **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. Se corrió en un clon limpio del proyecto, con HOME vacío y sin red, contra el kernel copiado dentro del proyecto en `vendor/vespi-kernel` y verificado módulo por módulo contra su `SOURCE.md` (Vespi 0.1.5, commit `ed559e8`). La salida completa está en [`suite-2026-10-09.txt`](suite-2026-10-09.txt).
 
-### Por qué la captura anterior estaba en rojo
+## Por qué la captura anterior estaba en rojo
 
 La captura del 2026-10-03 estaba en rojo porque el proyecto seguía fijado a un corte viejo del kernel (0.1.3). El kernel se consume por digest, módulo por módulo, así que el movimiento se vio en la suite y en la comprobación de la fijación. Esa fijación se reevaluó y el proyecto ahora corre contra el kernel 0.1.5 (commit `ed559e8`); la corrida de arriba es el resultado de ese re-pin.
 
-### Qué cubren los nombres de las pruebas
+## Qué cubren los nombres de las pruebas
 
 Los nombres que siguen se copiaron de `suite-2026-10-09.txt`.
 
-#### Límites concedidos por la paciente
+### Límites concedidos por la paciente
 
 - **1 · la entrega de datos clínicos sin autorización no abre, aunque el propósito esté declarado** (pasa): declarar un propósito no autoriza por sí solo el acceso.
 - **2 · el profesional que excede el alcance queda bloqueado, con su motivo** (pasa): el acceso fuera de la parte concedida se bloquea con una razón.
@@ -73,27 +73,27 @@ Los nombres que siguen se copiaron de `suite-2026-10-09.txt`.
 - **7 · caso de control: un acceso dentro de lo autorizado sí ocurre y se verifica** (pasa): un caso de control permitido dentro del alcance.
 - **8 · el mismo acceso no se ejecuta dos veces: el segundo devuelve el recibo del primero** (pasa): un intento repetido devuelve el primer recibo.
 
-#### Recibos y verificación independiente
+### Recibos y verificación independiente
 
 - **9 · un recibo editado a mano no verifica** (pasa): un recibo alterado no pasa la verificación.
 - **10 · un verificador que solo cree al ejecutor no puede producir un verde en la auditoría** (pasa): la auditoría debe recalcular desde el registro, no aceptar lo que afirma el ejecutor.
 - **12 · el registro es un archivo que la paciente puede abrir sin Ficha Contigo** (pasa): el registro se puede leer por separado.
 
-#### Capacidad simulada y huella del kernel
+### Capacidad simulada y huella del kernel
 
 - **11 · la demostración de conocimiento cero no transporta el dato y se declara simulada** (pasa): comprueba la etiqueta de simulación y que el flujo de demostración no transporte el dato; no es una prueba criptográfica.
 - **13 · el núcleo que consume Ficha Contigo es el corte fijado, módulo por módulo** (pasa): verifica los digest fijados y solicita intencionalmente una nueva fijación manual si el kernel cambia.
 
-### Qué encontró la fase adversarial anterior
+## Qué encontró la fase adversarial anterior
 
 El acuerdo y `FASES.md` dicen que los trece casos de comportamiento se escribieron antes de la implementación y que se observó su salida roja con el esqueleto del módulo ya presente, de modo que el rojo venía del comportamiento y no de la ausencia del módulo. La corrida roja registró que todos los métodos del esqueleto decían «no implementado». Los casos cubrían acceso sin autorización, exceso de alcance, emergencia sin mandato previo, revisión obligatoria abierta, cambio del contenido, revocación hacia adelante, acceso de control permitido, idempotencia, recibos editados a mano, un verificador que solo confía en el ejecutor, el límite de la demostración simulada, registro legible y el corte exacto del kernel. El recibo verde del 2026-09-29 informa después 13/13 contra el corte fijado. Estos registros describen pruebas y un recorrido; no son una auditoría clínica ni de seguridad externa.
 
-### Recorrido registrado y límites
+## Recorrido registrado y límites
 
 El registro del recorrido del 2026-09-29 informa un flujo ficticio completo: permiso y acceso ordinarios, bloqueo fuera de alcance, corrección del contenido y diferencia de huellas, revocación, acceso de emergencia concedido antes, revisión abierta y cierre por la paciente, bloqueos por presupuesto y vencimiento, demostración simulada de conocimiento cero, comprobaciones de recibos y auditoría independiente. Indica que el anclaje Stellar siguió `pending` y que nada llegó a la red. La paciente, las instituciones, los profesionales y las partes de la ficha del ejemplo son ficticios. El registro también dice que las pruebas no establecen cumplimiento legal, custodia de datos reales, interoperabilidad con prestadores, soporte FHIR ni permiso de un prestador.
 
 El acuerdo dice que el reglamento del artículo 13 no se leyó ni verificó. El verificador de conocimiento cero quedó para el kernel 0.1.4, y el acceso de emergencia vive en la capa del proyecto y no en el kernel 0.1.3. Este proyecto no tiene transacciones de testnet ni recibos en exploradores.
 
-### Cómo volver a correr las pruebas cuando se abra el código
+## Cómo volver a correr las pruebas cuando se abra el código
 
 Durante el periodo de revisión de los jueces se publicará el código bajo la licencia de solo revisión. Desde la raíz del proyecto, ejecuta `npm test`. El comando de la suite en el paquete fuente es `node --test "test/*.test.js"`. Una nueva corrida debe dar el mismo conteo que la registrada: **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. La salida completa de esa corrida es la referencia y se conserva en [`suite-2026-10-09.txt`](suite-2026-10-09.txt). Una corrida nueva debe identificar el corte de kernel que probó. Este procedimiento no requiere red ni transacciones de testnet.

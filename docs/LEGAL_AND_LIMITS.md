@@ -29,9 +29,9 @@ No competent legal professional has reviewed this project. It does not claim com
 
 These questions are open; this document does not answer them or imply that the prototype is ready for clinical use.
 
-## Español
+# Español
 
-### Disposiciones que nombra el acuerdo
+## Disposiciones que nombra el acuerdo
 
 El acuerdo dice que el proyecto responde al problema descrito por la Ley 21.668 de Chile, que modifica la Ley 20.584. Registra que el artículo 12, inciso segundo, trata de la integridad de la ficha clínica y del acceso oportuno, la conservación, la confidencialidad, la autenticidad de su contenido y los cambios efectuados. También registra que el artículo 13 trata de interoperabilidad y del acceso oportuno a información necesaria para la continuidad del cuidado por profesionales de la salud que participan directamente en esa atención. El acuerdo dice que el texto de los artículos 12 y 13 se leyó en una fuente primaria el 2026-09-29.
 
@@ -39,7 +39,7 @@ El acuerdo también nombra la Ley 19.628 porque el artículo 13 de la Ley 21.668
 
 Ninguna persona competente en derecho ha revisado este proyecto. No afirma cumplir la Ley 21.668, la Ley 19.628 ni ninguna otra norma. Las disposiciones citadas orientaron una intención de diseño en torno al alcance concedido por la paciente y a un registro legible de los accesos; esa intención no equivale a una conclusión de cumplimiento.
 
-### Lo que el proyecto no establece
+## Lo que el proyecto no establece
 
 - El prototipo no establece cumplimiento normativo, validez jurídica, valor probatorio, consentimiento informado, identidad ni credenciales profesionales.
 - No guarda datos clínicos reales, se conecta con un prestador de salud, interoperabilidad con una institución ni implementa FHIR.
@@ -49,7 +49,7 @@ Ninguna persona competente en derecho ha revisado este proyecto. No afirma cumpl
 - El resultado de las pruebas no demuestra que esté listo para uso. [Evidencia](EVIDENCE.md) informa el resultado actual y el corte del kernel que ejerció.
 - El recorrido ficticio no demuestra funcionamiento en un entorno real de atención.
 
-### Preguntas abiertas
+## Preguntas abiertas
 
 - ¿Qué revisión jurídica, clínica e institucional se necesitaría antes de involucrar datos de salud reales o a un prestador?
 - ¿Cómo se establecerían la identidad, la capacidad de la paciente, la delegación y las credenciales profesionales en un entorno real?
