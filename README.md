@@ -155,8 +155,6 @@ Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests 
 <details>
 <summary><b>Leer en español</b></summary>
 
-<p align="center"><b>Postulamos a la hackatón Find Your Way y planeamos participar en Meridian.</b></p>
-
 <a id="espanol"></a>
 
 <p align="center"><b>Ficha Contigo</b> — una paciente no ve quién abrió qué parte de su ficha clínica ni para qué.<br>
