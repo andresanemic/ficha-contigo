@@ -44,9 +44,9 @@ The 2026-09-29 walkthrough log reports a full fictional flow: ordinary permissio
 
 The agreement says the law's article 13 regulation was not read or verified. The zero-knowledge verifier was deferred to kernel 0.1.4, and the emergency capability lives in this project's layer rather than kernel 0.1.3. No testnet transaction or explorer receipt exists for this project.
 
-## How to rerun when the code opens
+## How to rerun the suite
 
-During the judges' review period the source will be published under the review-only license. From the project root, run `npm test`. The suite command in the source package is `node --test "test/*.test.js"`. A rerun should give the same count as the recorded run: **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. The full output of that run is the reference and is kept in [`suite-2026-10-09.txt`](suite-2026-10-09.txt). A new run should identify the kernel cut it tested. No network or testnet transaction is part of this procedure.
+The source is in this repository under the review-only license (reading and cloning for evaluation; no modification or redistribution). From the project root, run `npm test` on Node 24. The suite command in the source package is `node --test "test/*.test.js"`. A rerun should give the same count as the recorded run: **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. The full output of that run is the reference and is kept in [`suite-2026-10-09.txt`](suite-2026-10-09.txt). A new run should identify the kernel cut it tested. No network or testnet transaction is part of this procedure.
 
 # Español
 
@@ -94,6 +94,6 @@ El registro del recorrido del 2026-09-29 informa un flujo ficticio completo: per
 
 El acuerdo dice que el reglamento del artículo 13 no se leyó ni verificó. El verificador de conocimiento cero quedó para el kernel 0.1.4, y el acceso de emergencia vive en la capa del proyecto y no en el kernel 0.1.3. Este proyecto no tiene transacciones de testnet ni recibos en exploradores.
 
-## Cómo volver a correr las pruebas cuando se abra el código
+## Cómo volver a correr las pruebas
 
-Durante el periodo de revisión de los jueces se publicará el código bajo la licencia de solo revisión. Desde la raíz del proyecto, ejecuta `npm test`. El comando de la suite en el paquete fuente es `node --test "test/*.test.js"`. Una nueva corrida debe dar el mismo conteo que la registrada: **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. La salida completa de esa corrida es la referencia y se conserva en [`suite-2026-10-09.txt`](suite-2026-10-09.txt). Una corrida nueva debe identificar el corte de kernel que probó. Este procedimiento no requiere red ni transacciones de testnet.
+El código está en este repositorio bajo la licencia de solo revisión (permite leer y clonar para evaluar, no modificar ni redistribuir). Desde la raíz del proyecto, ejecuta `npm test` con Node 24. El comando de la suite en el paquete fuente es `node --test "test/*.test.js"`. Una nueva corrida debe dar el mismo conteo que la registrada: **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. La salida completa de esa corrida es la referencia y se conserva en [`suite-2026-10-09.txt`](suite-2026-10-09.txt). Una corrida nueva debe identificar el corte de kernel que probó. Este procedimiento no requiere red ni transacciones de testnet.

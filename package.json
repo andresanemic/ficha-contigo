@@ -1,0 +1,11 @@
+{
+  "name": "ficha-contigo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Proyecto 4 de los diez de Vespi: la ficha clínica, del lado de la paciente. Consume el kernel de Vespi; no lo modifica.",
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "recorrido": "node src/recorrido.js",
+    "cli": "node src/cli.js"
+  }
+}

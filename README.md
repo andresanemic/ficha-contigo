@@ -17,7 +17,7 @@
 The person grants access with limits, emergency access is agreed in advance, and every access is checked. Evidence: 13/13 tests. Fictional patients and data. Chilean Law 21.668.</p>
 
 <p align="center"><b>We’re applying to the Find Your Way hackathon and plan to participate in Meridian.</b></p>
-<p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./CODE_NOT_INCLUDED.md">Source and review terms</a>.<br>This public snapshot contains documentation and evidence, not runnable source.</p>
+<p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./LICENSE">Review-only license</a>.<br>The source is in this repository: run <code>npm test</code> on Node 24.</p>
 
 ---
 
@@ -42,7 +42,7 @@ In the recorded fictional case, `persona-1` has three example parts: a laborator
 
 ## What it looks like in practice
 
-The English lines below render the Spanish output recorded by the terminal walkthrough. The source transcript marks its value as an example, and the Spanish section reproduces that output. This public repository does not include source code or a runnable command today.
+The English lines below render the Spanish output recorded by the terminal walkthrough. The source transcript marks its value as an example, and the Spanish section reproduces that output. The source and its command are in this repository.
 
 ```text
 Fictional example: persona-1, prof-1, part-1
@@ -109,7 +109,7 @@ The complete rule set, including what happens when the part changes, is in [How 
 
 ## What it is not
 
-Ficha Contigo is not an electronic health record, a clinical system, a provider integration, an identity service, a medical decision-maker or a compliance claim. The public repository currently contains the agreement, documentation and recorded evidence, not source code. Its example data is fictional and local.
+Ficha Contigo is not an electronic health record, a clinical system, a provider integration, an identity service, a medical decision-maker or a compliance claim. Its example data is fictional and local.
 
 ## Evidence you can open
 
@@ -136,7 +136,7 @@ See [Legal and limits](./docs/LEGAL_AND_LIMITS.md) for the legal context and ope
 
 ## How to review this project
 
-Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests and recorded runs in [Evidence](./docs/EVIDENCE.md). Read [Legal and limits](./docs/LEGAL_AND_LIMITS.md) and [Code not included](./docs/CODE_NOT_INCLUDED.md) before drawing conclusions. The source code will be published during the judges' review period under the [review-only license](./LICENSE), which permits reading and cloning for evaluation. When it opens, run `npm test` and compare the result with the recorded capture in `docs/suite-2026-10-09.txt`; a new run should state which kernel cut it exercised.
+Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests and recorded runs in [Evidence](./docs/EVIDENCE.md). Read [Legal and limits](./docs/LEGAL_AND_LIMITS.md) before drawing conclusions. The source is in this repository under the [review-only license](./LICENSE), which permits reading and cloning for evaluation. Run `npm test` on Node 24 and compare the result with the recorded capture in `docs/suite-2026-10-09.txt`; a new run should state which kernel cut it exercised.
 
 ## Author
 
@@ -146,7 +146,7 @@ Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests 
 
 ---
 
-[How it works](./docs/HOW_IT_WORKS.md) · [Evidence](./docs/EVIDENCE.md) · [Legal and limits](./docs/LEGAL_AND_LIMITS.md) · [Code not included](./docs/CODE_NOT_INCLUDED.md) · [Review-only license](./LICENSE) · [Vespi](https://github.com/andresanemic/vespi) · [Lore Plugin](https://github.com/andresanemic/lore-plugin)
+[How it works](./docs/HOW_IT_WORKS.md) · [Evidence](./docs/EVIDENCE.md) · [Legal and limits](./docs/LEGAL_AND_LIMITS.md) · [Review-only license](./LICENSE) · [Vespi](https://github.com/andresanemic/vespi) · [Lore Plugin](https://github.com/andresanemic/lore-plugin)
 
 </details>
 
@@ -173,7 +173,7 @@ Abre el registro de pruebas. Consulta [Evidencia](./docs/EVIDENCE.md).
 
 Lee los límites jurídicos y de verificación. Consulta [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md).
 
-Revisa las condiciones de publicación. Consulta [Código no incluido](./docs/CODE_NOT_INCLUDED.md) y la [licencia de solo revisión](./LICENSE).
+Lee los términos en la [licencia de solo revisión](./LICENSE) y ejecuta `npm test` (Node 24).
 
 ## En un minuto
 
@@ -181,7 +181,7 @@ En el caso ficticio registrado, `persona-1` tiene tres partes de ejemplo: un res
 
 ## Cómo se ve en la práctica
 
-Los datos del recorrido son ficticios, como indica su registro. Las siguientes líneas de salida se reproducen en su idioma original; el valor se marca expresamente como ejemplo. Este repositorio no incluye hoy el código fuente ni un comando ejecutable.
+Los datos del recorrido son ficticios, como indica su registro. Las siguientes líneas de salida se reproducen en su idioma original; el valor se marca expresamente como ejemplo. El código y su comando están en este repositorio.
 
 ```text
 parte-1  resultado de laboratorio  v1  huella 207379441beefced…
@@ -246,7 +246,7 @@ Las reglas completas, incluido qué ocurre si cambia una parte de la ficha, est�
 
 ## Lo que no es
 
-Ficha Contigo no es una ficha electrónica, un sistema clínico, una integración con prestadores, un servicio de identidad, un sistema de decisiones médicas ni una afirmación de cumplimiento. El repositorio público contiene por ahora el acuerdo, la documentación y la evidencia registrada, no el código fuente. Sus datos de ejemplo son ficticios y locales.
+Ficha Contigo no es una ficha electrónica, un sistema clínico, una integración con prestadores, un servicio de identidad, un sistema de decisiones médicas ni una afirmación de cumplimiento. Sus datos de ejemplo son ficticios y locales.
 
 ## Evidencia que puedes abrir
 
@@ -273,7 +273,7 @@ Consulta [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) para el contexto j
 
 ## Cómo revisar este proyecto
 
-Empieza por [Cómo funciona](./docs/HOW_IT_WORKS.md) y luego compara los nombres de las pruebas con las corridas registradas en [Evidencia](./docs/EVIDENCE.md). Lee [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) y [Código no incluido](./docs/CODE_NOT_INCLUDED.md) antes de sacar conclusiones. El código fuente se publicará durante el periodo de revisión de los jueces bajo la [licencia de solo revisión](./LICENSE), que permite leer y clonar para evaluar. Cuando se abra, ejecuta `npm test` y compara el resultado con la captura registrada en `docs/suite-2026-10-09.txt`; una corrida nueva debe indicar qué corte del kernel probó.
+Empieza por [Cómo funciona](./docs/HOW_IT_WORKS.md) y luego compara los nombres de las pruebas con las corridas registradas en [Evidencia](./docs/EVIDENCE.md). Lee [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) antes de sacar conclusiones. El código está en este repositorio bajo la [licencia de solo revisión](./LICENSE), que permite leer y clonar para evaluar. Ejecuta `npm test` con Node 24 y compara el resultado con la captura registrada en `docs/suite-2026-10-09.txt`; una corrida nueva debe indicar qué corte del kernel probó.
 
 ## Autor
 
@@ -283,6 +283,6 @@ Empieza por [Cómo funciona](./docs/HOW_IT_WORKS.md) y luego compara los nombres
 
 ---
 
-[Cómo funciona](./docs/HOW_IT_WORKS.md) · [Evidencia](./docs/EVIDENCE.md) · [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) · [Código no incluido](./docs/CODE_NOT_INCLUDED.md) · [Licencia de solo revisión](./LICENSE) · [Vespi](https://github.com/andresanemic/vespi) · [Lore Plugin](https://github.com/andresanemic/lore-plugin)
+[Cómo funciona](./docs/HOW_IT_WORKS.md) · [Evidencia](./docs/EVIDENCE.md) · [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) · [Licencia de solo revisión](./LICENSE) · [Vespi](https://github.com/andresanemic/vespi) · [Lore Plugin](https://github.com/andresanemic/lore-plugin)
 
 </details>
