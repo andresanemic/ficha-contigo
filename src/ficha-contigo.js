@@ -581,7 +581,7 @@ class FichaContigo {
     }
     const cap = this.capacidad(pedido, op.puerta, op.emergencia);
     if (opciones.verificador) cap.io.verify = this.verificadorDe(opciones.verificador);
-    // El kernel 0.1.5 verifica expiresAt contra io.now (función síncrona).
+    // El kernel 0.1.6 verifica expiresAt contra io.now (función síncrona).
     // Convertimos opciones.now (string ISO en las pruebas) a esa función.
     const nowValue = opciones.now;
     const nowFn = typeof nowValue === 'function' ? nowValue : (nowValue !== undefined && nowValue !== null ? () => nowValue : undefined);
@@ -679,7 +679,7 @@ class FichaContigo {
   // Lo que se construye es el flujo y la promesa de no soltar el dato: la
   // demostración lleva un compromiso —una huella de la afirmación y de la parte—
   // y nada del contenido. Lo que NO se construye es la prueba: el verificador de
-  // conocimiento cero existe en el kernel 0.1.5, pero aquí no se integra y no hay ZK.
+  // conocimiento cero existe en el kernel 0.1.6, pero aquí no se integra y no hay ZK.
   demostrar({ afirmacion, parte, nonce = 'contigo' }) {
     if (!texto(afirmacion)) throw new Error('una demostración necesita la afirmación que se quiere probar');
     if (!texto(parte)) throw new Error('una demostración necesita la parte de la ficha de la que se afirma');
@@ -699,7 +699,7 @@ class FichaContigo {
       parte,
       compromiso,
       simulada: true,
-      razon: 'la prueba va simulada: el kernel 0.1.5 incluye un verificador de conocimiento cero, pero Ficha Contigo no lo integra y aquí no hay ZK. Lo que se demuestra es el flujo y que la demostración no transporta la ficha.',
+      razon: 'la prueba va simulada: el kernel 0.1.6 incluye un verificador de conocimiento cero, pero Ficha Contigo no lo integra y aquí no hay ZK. Lo que se demuestra es el flujo y que la demostración no transporta la ficha.',
       en: linea.en,
     };
   }

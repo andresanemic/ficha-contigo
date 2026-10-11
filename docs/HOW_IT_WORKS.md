@@ -63,7 +63,7 @@ Each receipt records the requester, purpose, permission, scope, fingerprint open
 
 The prototype demonstrates a local flow for scoped patient authorization, purpose checks, revocation, content fingerprints, receipts, independent recomputation and advance-granted emergency access with an outstanding human review. Its test suite and recorded walkthrough use fictional inputs.
 
-It does not prove that a real clinical system can safely access or store a record, that a provider can integrate it, that a patient or professional's identity is established, that a medical fact is true, or that any law is satisfied. It has no real data, provider integration, FHIR connection, network operation, blockchain anchor or actual zero-knowledge proof. The emergency mandate belongs to the project layer rather than kernel 0.1.5. [`EVIDENCE.md`](EVIDENCE.md) records the suite status and the kernel cut it exercised. This prototype shows a working path, not a finished product or readiness for use.
+It does not prove that a real clinical system can safely access or store a record, that a provider can integrate it, that a patient or professional's identity is established, that a medical fact is true, or that any law is satisfied. It has no real data, provider integration, FHIR connection, network operation, blockchain anchor or actual zero-knowledge proof. The emergency mandate belongs to the project layer rather than kernel 0.1.6. [`EVIDENCE.md`](EVIDENCE.md) records the suite status and the kernel cut it exercised. This prototype shows a working path, not a finished product or readiness for use.
 
 ## Related documents
 
@@ -135,7 +135,7 @@ Cada recibo registra quién solicitó, el propósito, el permiso, el alcance, la
 
 El prototipo demuestra un flujo local de autorización de alcance concedida por la paciente, comprobación de propósito, revocación, huellas de contenido, recibos, recálculo independiente y acceso de emergencia otorgado por adelantado con una revisión humana pendiente. La suite de pruebas y el recorrido registrado usan datos ficticios.
 
-No demuestra que un sistema clínico real pueda acceder o guardar una ficha de manera segura, que un prestador pueda integrarse, que se establezca la identidad de una paciente o profesional, que un dato médico sea verdadero ni que se cumpla una ley. No tiene datos reales, integración con prestadores, conexión FHIR, operación de red, anclaje en blockchain ni prueba real de conocimiento cero. El mandato de emergencia pertenece a la capa del proyecto y no al kernel 0.1.5. [`EVIDENCE.md`](EVIDENCE.md) informa el estado de la suite y el corte del kernel que ejerció. Este prototipo muestra un camino que funciona, no un producto terminado ni algo listo para uso.
+No demuestra que un sistema clínico real pueda acceder o guardar una ficha de manera segura, que un prestador pueda integrarse, que se establezca la identidad de una paciente o profesional, que un dato médico sea verdadero ni que se cumpla una ley. No tiene datos reales, integración con prestadores, conexión FHIR, operación de red, anclaje en blockchain ni prueba real de conocimiento cero. El mandato de emergencia pertenece a la capa del proyecto y no al kernel 0.1.6. [`EVIDENCE.md`](EVIDENCE.md) informa el estado de la suite y el corte del kernel que ejerció. Este prototipo muestra un camino que funciona, no un producto terminado ni algo listo para uso.
 
 ## Documentos relacionados
 

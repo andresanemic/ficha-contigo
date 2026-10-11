@@ -176,8 +176,8 @@ async function main() {
   linea('  - No cumple la Ley 21.668 ni la Ley 19.628 ni ninguna otra norma. El texto de los artículos 12 y 13 se leyó el 2026-09-29 y es el problema que esto responde, no un cumplimiento.');
   linea('  - El reglamento del artículo 13 que la propia ley encarga NO se leyó ni se verificó: que esté publicado es NO VERIFICADO.');
   linea('  - No se afirma nada de la Ley 21.719: quedó NO VERIFICADA en los dos proyectos anteriores y ese estado no se hereda.');
-  linea('  - La prueba de conocimiento cero va SIMULADA: el kernel 0.1.5 incluye un verificador ZK, pero este recorrido no lo integra: la prueba sigue SIMULADA.');
-  linea('  - El acceso de emergencia se ejerce con la autoridad propia de Ficha Contigo; este recorrido no integra el módulo emergency.js del kernel 0.1.5.');
+  linea('  - La prueba de conocimiento cero va SIMULADA: el kernel 0.1.6 incluye un verificador ZK, pero este recorrido no lo integra: la prueba sigue SIMULADA.');
+  linea('  - El acceso de emergencia se ejerce con la autoridad propia de Ficha Contigo; este recorrido no integra el módulo emergency.js del kernel 0.1.6.');
   linea('  - No hay hash en testnet ni recibo en explorador: el anclaje quedó en `pending` a propósito.');
   linea('  - No hay custodia de datos reales, ni interoperabilidad con un prestador, ni FHIR, ni permiso de nadie.');
   linea('  - La paciente, las instituciones, los profesionales y las partes de la ficha son de ejemplo.');
