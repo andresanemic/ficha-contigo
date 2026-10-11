@@ -126,6 +126,9 @@ Ficha Contigo is one of the functional projects built on [Vespi](https://github.
 
 ## What it does not do, and what is not verified
 
+Review status: this project has not been audited. The Vespi kernel it runs on has had superreviews with Claude Code and no independent external security audit.
+
+
 - It does not hold real clinical or identifying data, connect to a provider, implement FHIR or make a real clinical decision.
 - It has no live emergency service, network operation, blockchain anchor or Stellar testnet transaction. The recorded anchor remains `pending`.
 - Its zero-knowledge flow is simulated. There is no real proof, circuit or verifier in this project.
@@ -264,6 +267,9 @@ Ficha Contigo es uno de los proyectos funcionales construidos sobre [Vespi](http
 **Qué significa esta relación.** El proyecto se construyó con el método de Lore Plugin (su acuerdo y su criterio viven en el proyecto, en `acuerdo.md` y `lore/`), y sus operaciones, autoridad y recibos corren sobre el kernel de Vespi 0.1.6, en la copia fijada para Lore Plugin 2.5.2 (`skills/vespi/core/kernel`). Esa copia está en el proyecto como `vendor/vespi-kernel` y la suite la verifica contra su `SOURCE.md`. Lore Plugin no corre dentro del proyecto. Este proyecto no usa las capacidades nuevas del kernel (anclas Stellar pubnet, liquidación x402 en vivo, el verificador ZK, el acceso de emergencia); ejerce el núcleo de operaciones, autoridad y recibos.
 
 ## Lo que no hace y lo que no está verificado
+
+Estado de revisión: este proyecto no ha sido auditado. El kernel de Vespi sobre el que corre ha tenido superreviews con Claude Code y ninguna auditoría de seguridad externa independiente.
+
 
 - No guarda datos clínicos o identificatorios reales, no se conecta con un prestador, no implementa FHIR ni toma decisiones clínicas reales.
 - No tiene un servicio de emergencia activo, operación de red, anclaje en blockchain ni transacciones en Stellar testnet. El anclaje registrado sigue `pending`.
