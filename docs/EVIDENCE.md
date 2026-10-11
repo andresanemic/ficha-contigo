@@ -2,7 +2,7 @@
 
 ## Current suite
 
-The recorded run of 2026-10-09 reports **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. It ran in a clean clone of the project, with an empty HOME and no network, against the kernel copied into the project under `vendor/vespi-kernel` and checked module by module against its `SOURCE.md` (Vespi 0.1.6, commit `95f2d61`). The full output is in [`suite-2026-10-09.txt`](suite-2026-10-09.txt).
+The recorded run of 2026-10-11 reports **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. It ran in a clean clone of the project, with an empty HOME and no network, against the kernel copied into the project under `vendor/vespi-kernel` and checked module by module against its `SOURCE.md` (Vespi 0.1.6, commit `95f2d61`). The full output is in [`suite-2026-10-11.txt`](suite-2026-10-11.txt).
 
 ## Why the earlier capture was red
 
@@ -10,7 +10,7 @@ The 2026-10-03 capture was red because the project was still pinned to an older 
 
 ## What the named tests cover
 
-The names below are copied from `suite-2026-10-09.txt`.
+The names below are copied from `suite-2026-10-11.txt`.
 
 ### Patient-granted boundaries
 
@@ -46,13 +46,13 @@ The agreement says the law's article 13 regulation was not read or verified. The
 
 ## How to rerun the suite
 
-The source is in this repository under the review-only license (reading and cloning for evaluation; no modification or redistribution). From the project root, run `npm test` on Node 24. The suite command in the source package is `node --test "test/*.test.js"`. A rerun should give the same count as the recorded run: **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. The full output of that run is the reference and is kept in [`suite-2026-10-09.txt`](suite-2026-10-09.txt). A new run should identify the kernel cut it tested. No network or testnet transaction is part of this procedure.
+The source is in this repository under the review-only license (reading and cloning for evaluation; no modification or redistribution). From the project root, run `npm test` on Node 24. The suite command in the source package is `node --test "test/*.test.js"`. A rerun should give the same count as the recorded run: **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. The full output of that run is the reference and is kept in [`suite-2026-10-11.txt`](suite-2026-10-11.txt). A new run should identify the kernel cut it tested. No network or testnet transaction is part of this procedure.
 
 # Español
 
 ## Suite actual
 
-La corrida registrada del 2026-10-09 informa **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. Se corrió en un clon limpio del proyecto, con HOME vacío y sin red, contra el kernel copiado dentro del proyecto en `vendor/vespi-kernel` y verificado módulo por módulo contra su `SOURCE.md` (Vespi 0.1.6, commit `95f2d61`). La salida completa está en [`suite-2026-10-09.txt`](suite-2026-10-09.txt).
+La corrida registrada del 2026-10-11 informa **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. Se corrió en un clon limpio del proyecto, con HOME vacío y sin red, contra el kernel copiado dentro del proyecto en `vendor/vespi-kernel` y verificado módulo por módulo contra su `SOURCE.md` (Vespi 0.1.6, commit `95f2d61`). La salida completa está en [`suite-2026-10-11.txt`](suite-2026-10-11.txt).
 
 ## Por qué la captura anterior estaba en rojo
 
@@ -60,7 +60,7 @@ La captura del 2026-10-03 estaba en rojo porque el proyecto seguía fijado a un 
 
 ## Qué cubren los nombres de las pruebas
 
-Los nombres que siguen se copiaron de `suite-2026-10-09.txt`.
+Los nombres que siguen se copiaron de `suite-2026-10-11.txt`.
 
 ### Límites concedidos por la paciente
 
@@ -96,4 +96,4 @@ El acuerdo dice que el reglamento del artículo 13 no se leyó ni verificó. El 
 
 ## Cómo volver a correr las pruebas
 
-El código está en este repositorio bajo la licencia de solo revisión (permite leer y clonar para evaluar, no modificar ni redistribuir). Desde la raíz del proyecto, ejecuta `npm test` con Node 24. El comando de la suite en el paquete fuente es `node --test "test/*.test.js"`. Una nueva corrida debe dar el mismo conteo que la registrada: **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. La salida completa de esa corrida es la referencia y se conserva en [`suite-2026-10-09.txt`](suite-2026-10-09.txt). Una corrida nueva debe identificar el corte de kernel que probó. Este procedimiento no requiere red ni transacciones de testnet.
+El código está en este repositorio bajo la licencia de solo revisión (permite leer y clonar para evaluar, no modificar ni redistribuir). Desde la raíz del proyecto, ejecuta `npm test` con Node 24. El comando de la suite en el paquete fuente es `node --test "test/*.test.js"`. Una nueva corrida debe dar el mismo conteo que la registrada: **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. La salida completa de esa corrida es la referencia y se conserva en [`suite-2026-10-11.txt`](suite-2026-10-11.txt). Una corrida nueva debe identificar el corte de kernel que probó. Este procedimiento no requiere red ni transacciones de testnet.
