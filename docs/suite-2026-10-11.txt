@@ -1,21 +1,21 @@
 Suite capture — ficha-contigo — 2026-10-11
-Command: node --test test/*.test.js (clean clone of commit 8d2f6ab, empty HOME, no network)
-Node: v24.15.0 · Kernel: Vespi 0.1.6, commit 95f2d614f4492056c8bb2cd951f08d1089027d4f, copied in vendor/vespi-kernel
+Command: node --test test/*.test.js (clean clone of commit 66926ee, empty HOME, no network)
+Node: v24.15.0 · Kernel: Vespi 0.1.6, commit 7767daa369e464b486ddf16b08b8985e59ec107d, copied in vendor/vespi-kernel
 Summary: tests 13 pass 13 fail 0 cancelled 0 skipped 0 todo 0 
 
-✔ 1 · la entrega de datos clínicos sin autorización no abre, aunque el propósito esté declarado (18.5086ms)
-✔ 2 · el profesional que excede el alcance queda bloqueado, con su motivo (22.0935ms)
-✔ 3 · el acceso de emergencia sin otorgamiento previo no existe (11.2518ms)
-✔ 4 · el acceso de emergencia deja revisión abierta y sin cerrar no pasa la auditoría (23.327ms)
-✔ 5 · la ficha alterada después de autorizada deja de abrir, y el bloqueo nombra las dos huellas (23.074ms)
-✔ 6 · la revocación no cierra un acceso ya ocurrido, y el registro lo muestra (23.2337ms)
-✔ 7 · caso de control: un acceso dentro de lo autorizado sí ocurre y se verifica (18.8293ms)
-✔ 8 · el mismo acceso no se ejecuta dos veces: el segundo devuelve el recibo del primero (22.896ms)
-✔ 9 · un recibo editado a mano no verifica (19.0898ms)
-✔ 10 · un verificador que solo cree al ejecutor no puede producir un verde en la auditoría (17.5776ms)
-✔ 11 · la demostración de conocimiento cero no transporta el dato y se declara simulada (10.1063ms)
-✔ 12 · el registro es un archivo que la paciente puede abrir sin Ficha Contigo (9.4412ms)
-✔ 13 · el núcleo que consume Ficha Contigo es el corte fijado, módulo por módulo (30.4128ms)
+✔ 1 · la entrega de datos clínicos sin autorización no abre, aunque el propósito esté declarado (18.1704ms)
+✔ 2 · el profesional que excede el alcance queda bloqueado, con su motivo (21.3938ms)
+✔ 3 · el acceso de emergencia sin otorgamiento previo no existe (10.5398ms)
+✔ 4 · el acceso de emergencia deja revisión abierta y sin cerrar no pasa la auditoría (22.5278ms)
+✔ 5 · la ficha alterada después de autorizada deja de abrir, y el bloqueo nombra las dos huellas (23.4585ms)
+✔ 6 · la revocación no cierra un acceso ya ocurrido, y el registro lo muestra (24.2146ms)
+✔ 7 · caso de control: un acceso dentro de lo autorizado sí ocurre y se verifica (18.4875ms)
+✔ 8 · el mismo acceso no se ejecuta dos veces: el segundo devuelve el recibo del primero (22.3539ms)
+✔ 9 · un recibo editado a mano no verifica (17.486ms)
+✔ 10 · un verificador que solo cree al ejecutor no puede producir un verde en la auditoría (17.4392ms)
+✔ 11 · la demostración de conocimiento cero no transporta el dato y se declara simulada (9.0822ms)
+✔ 12 · el registro es un archivo que la paciente puede abrir sin Ficha Contigo (9.2809ms)
+✔ 13 · el núcleo que consume Ficha Contigo es el corte fijado, módulo por módulo (31.1783ms)
 ℹ tests 13
 ℹ suites 0
 ℹ pass 13
@@ -23,4 +23,4 @@ Summary: tests 13 pass 13 fail 0 cancelled 0 skipped 0 todo 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 416.3668
+ℹ duration_ms 421.0136
