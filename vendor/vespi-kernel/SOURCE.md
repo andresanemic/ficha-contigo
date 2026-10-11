@@ -1,8 +1,8 @@
 # Vespi kernel copy provenance
 
-Fixed copy of Vespi kernel **0.1.6**, source commit `7767daa369e464b486ddf16b08b8985e59ec107d` (local cut; no GitHub release is claimed). Canonical source: `founder/proyectos/vespi/kernel/src/`, branch `master`.
+Fixed copy of Vespi kernel **0.1.6**, source commit `98a33280fb35cb1fc7feda483e7dd57b97362c49` (local cut; no GitHub release is claimed). Canonical source: `founder/proyectos/vespi/kernel/src/`, branch `master`.
 
-Each module has a three-line provenance header followed by the exact source bytes. The test compares each body with `git show 7767daa369e464b486ddf16b08b8985e59ec107d:src/<file>`.
+Each module has a three-line provenance header followed by the exact source bytes. The test compares each body with `git show 98a33280fb35cb1fc7feda483e7dd57b97362c49:src/<file>`.
 
 | Module | SHA-256 of source bytes | Bytes |
 |---|---|---|
