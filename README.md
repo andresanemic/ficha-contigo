@@ -115,7 +115,7 @@ Ficha Contigo is not an electronic health record, a clinical system, a provider 
 
 ## Evidence you can open
 
-The supplied current suite record reports **13 tests, 13 pass, 0 skipped**, run on Node v24.15.0. The suite ran in a clean clone of the project, with an empty HOME and no network, against the kernel copied into the project under `vendor/vespi-kernel` and checked module by module against its `SOURCE.md`. Thirteen cases were written before implementation. In the first red run, twelve behavior cases were red against the module skeleton, while the kernel digest guard passed against the then-pinned cut. A later recorded run reports 13/13 against that cut. The 2026-10-03 capture was red for a different reason: the project was still pinned to an older kernel cut (0.1.3), and the kernel is consumed by digest, so the movement showed up in the suite. That pin was reassessed and the project now runs against kernel **0.1.6** (commit `39d4573`); the capture in `docs/suite-2026-10-11.txt` is the result. Details and test names are in [Evidence](./docs/EVIDENCE.md).
+The recorded current suite record reports **13 tests, 13 pass, 0 skipped**, run on Node v24.15.0. The suite ran in a clean clone of the project, with an empty HOME and no network, against the kernel copied into the project under `vendor/vespi-kernel` and checked module by module against its `SOURCE.md`. Thirteen cases were written before implementation. In the first red run, twelve behavior cases were red against the module skeleton, while the kernel digest guard passed against the then-pinned cut. A later recorded run reports 13/13 against that cut. The 2026-10-03 capture was red for a different reason: the project was still pinned to an older kernel cut (0.1.3), and the kernel is consumed by digest, so the movement showed up in the suite. That pin was reassessed and the project now runs against kernel **0.1.6** (commit `39d4573`); the capture in `docs/suite-2026-10-11.txt` is the result. Details and test names are in [Evidence](./docs/EVIDENCE.md).
 
 The recorded walkthrough covers an in-scope access, blocks for missing or excessive permission, content correction and fingerprint mismatch, revocation, advance-granted emergency access, an open and later closed review, budget and expiry blocks, simulated zero-knowledge flow, receipts and an independent audit. It reports the Stellar anchor as `pending`; nothing reached a network. The records are project evidence, not an external clinical or security audit.
 
@@ -287,7 +287,7 @@ Empieza por [Cómo funciona](./docs/HOW_IT_WORKS.md) y luego compara los nombres
 
 ## Autor
 
-**Andrés Peña**, repository authority: `andresanemic`.
+**Andrés Peña**, autoridad del repositorio: `andresanemic`.
 
 [<img src="./assets/icons/v2/telegram.svg" width="28" alt="Telegram">](https://t.me/andresanemic) &nbsp;&nbsp; [<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/v2/x-dark.svg"><img src="./assets/icons/v2/x.svg" width="28" alt="X"></picture>](https://x.com/andresanemic) &nbsp;&nbsp; [<img src="./assets/icons/v2/linkedin.svg" width="28" alt="LinkedIn">](https://www.linkedin.com/in/andresanemic/)
 
