@@ -1,0 +1,2 @@
+# Los bytes del kernel vendorizado se verifican por digest: no se les convierte el fin de linea al clonar.
+vendor/vespi-kernel/** -text
