@@ -2,11 +2,11 @@
 
 ## Current suite
 
-The recorded run of 2026-10-11 reports **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. It ran in a clean clone of the project, with an empty HOME and no network, against the kernel copied into the project under `vendor/vespi-kernel` and checked module by module against its `SOURCE.md` (Vespi 0.1.6, commit `98a3328`). The full output is in [`suite-2026-10-11.txt`](suite-2026-10-11.txt).
+The recorded run of 2026-10-11 reports **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. It ran in a clean clone of the project, with an empty HOME and no network, against the kernel copied into the project under `vendor/vespi-kernel` and checked module by module against its `SOURCE.md` (Vespi 0.1.6, commit `39d4573`). The full output is in [`suite-2026-10-11.txt`](suite-2026-10-11.txt).
 
 ## Why the earlier capture was red
 
-The 2026-10-03 capture was red because the project was still pinned to an older kernel cut (0.1.3). The kernel is consumed by digest, module by module, so the movement showed up in the suite and in the pin check. That pin was reassessed and the project now runs against kernel 0.1.6 (commit `98a3328`); the run above is the result of that re-pin.
+The 2026-10-03 capture was red because the project was still pinned to an older kernel cut (0.1.3). The kernel is consumed by digest, module by module, so the movement showed up in the suite and in the pin check. That pin was reassessed and the project now runs against kernel 0.1.6 (commit `39d4573`); the run above is the result of that re-pin.
 
 ## What the named tests cover
 
@@ -52,11 +52,11 @@ The source is in this repository under the review-only license (reading and clon
 
 ## Suite actual
 
-La corrida registrada del 2026-10-11 informa **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. Se corrió en un clon limpio del proyecto, con HOME vacío y sin red, contra el kernel copiado dentro del proyecto en `vendor/vespi-kernel` y verificado módulo por módulo contra su `SOURCE.md` (Vespi 0.1.6, commit `98a3328`). La salida completa está en [`suite-2026-10-11.txt`](suite-2026-10-11.txt).
+La corrida registrada del 2026-10-11 informa **13 pruebas, 13 pasan, 0 omitidas**, con Node v24.15.0. Se corrió en un clon limpio del proyecto, con HOME vacío y sin red, contra el kernel copiado dentro del proyecto en `vendor/vespi-kernel` y verificado módulo por módulo contra su `SOURCE.md` (Vespi 0.1.6, commit `39d4573`). La salida completa está en [`suite-2026-10-11.txt`](suite-2026-10-11.txt).
 
 ## Por qué la captura anterior estaba en rojo
 
-La captura del 2026-10-03 estaba en rojo porque el proyecto seguía fijado a un corte viejo del kernel (0.1.3). El kernel se consume por digest, módulo por módulo, así que el movimiento se vio en la suite y en la comprobación de la fijación. Esa fijación se reevaluó y el proyecto ahora corre contra el kernel 0.1.6 (commit `98a3328`); la corrida de arriba es el resultado de ese re-pin.
+La captura del 2026-10-03 estaba en rojo porque el proyecto seguía fijado a un corte viejo del kernel (0.1.3). El kernel se consume por digest, módulo por módulo, así que el movimiento se vio en la suite y en la comprobación de la fijación. Esa fijación se reevaluó y el proyecto ahora corre contra el kernel 0.1.6 (commit `39d4573`); la corrida de arriba es el resultado de ese re-pin.
 
 ## Qué cubren los nombres de las pruebas
 
