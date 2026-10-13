@@ -10,7 +10,8 @@
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-13_of_13_pass-D7B698?style=for-the-badge&labelColor=07111A" alt="Suite: 13 of 13 tests pass"></a> <b>It worked.</b>
   <a href="./docs/HOW_IT_WORKS.md"><img src="https://img.shields.io/badge/agreement-written_before_code-E0C170?style=for-the-badge&labelColor=07111A" alt="Agreement written before code"></a>
   <a href="https://github.com/andresanemic/vespi"><img src="https://img.shields.io/badge/built_with-Vespi_%C2%B7_Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Vespi and Lore Plugin"></a>
-  <a href="https://github.com/andresanemic/lore-plugin"><img src="https://img.shields.io/badge/Lore_Plugin-4057%2B_recorded_clones-E0C170?style=for-the-badge&labelColor=07111A" alt="4,057+ recorded clones of Lore Plugin since launch (through 2026-10-10)"></a>
+  <a href="https://github.com/andresanemic/lore-plugin"><img src="https://img.shields.io/badge/Lore_Plugin-4415%2B_recorded_clones-E0C170?style=for-the-badge&labelColor=07111A" alt="4,415+ recorded clones of Lore Plugin since launch (through 2026-10-12)"></a>
+  <a href="./data/traffic/source-2026-10-13.json"><img src="https://img.shields.io/badge/clones-189_in_14_days-E0C170?style=for-the-badge&labelColor=07111A" alt="ficha-contigo: 189 GitHub clone events, 2026-09-29 to 2026-10-12 UTC"></a>
   <a href="https://github.com/andresanemic/vespi/tree/39d45733839d0a05f60248fc6e5b81c892c464f8"><img src="https://img.shields.io/badge/kernel-0.1.6_pin-39d4573?style=for-the-badge&labelColor=07111A&color=E0C170" alt="Kernel: 0.1.6 source pin (commit 39d4573)"></a>
 </p>
 
