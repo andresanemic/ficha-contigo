@@ -20,6 +20,8 @@ The person grants access with limits, emergency access is agreed in advance, and
 <p align="center"><b>We submitted Vespi to the Find Your Way hackathon and plan to participate in Meridian.</b></p>
 <p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./LICENSE">Review-only license</a>.<br>The source is in this repository: run <code>npm test</code> on Node 24.</p>
 
+These projects remain separate, runnable repositories. **Vespi Desktop** is the planned workspace for the kit and kernel, with **Hive as its creation studio**; this project is not yet integrated into an installable Desktop app. / Estos proyectos siguen siendo repositorios ejecutables por separado. **Vespi Desktop** será el espacio de trabajo del kit y el kernel, con **Hive como taller de creación**; este proyecto aún no está integrado en una app Desktop instalable.
+
 ---
 
 <details>
