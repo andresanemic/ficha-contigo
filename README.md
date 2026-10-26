@@ -9,8 +9,8 @@
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-13_of_13_pass-D7B698?style=for-the-badge&labelColor=07111A" alt="Suite: 13 of 13 tests pass"></a>
   <a href="./docs/HOW_IT_WORKS.md"><img src="https://img.shields.io/badge/agreement-written_before_code-E0C170?style=for-the-badge&labelColor=07111A" alt="Agreement written before code"></a>
   <a href="https://github.com/andresanemic/vespi"><img src="https://img.shields.io/badge/built_with-Vespi_%C2%B7_Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Vespi and Lore Plugin"></a>
-  <a href="./data/traffic/source-2026-10-13.json"><img src="https://img.shields.io/badge/clones-189_in_14_days-E0C170?style=for-the-badge&labelColor=07111A" alt="ficha-contigo: 189 GitHub clone events, 2026-09-29 to 2026-10-12 UTC"></a>
-  <a href="https://github.com/andresanemic/vespi/tree/39d45733839d0a05f60248fc6e5b81c892c464f8"><img src="https://img.shields.io/badge/kernel-0.1.6_pin-39d4573?style=for-the-badge&labelColor=07111A&color=E0C170" alt="Kernel: 0.1.6 source pin (commit 39d4573)"></a>
+  <a href="./data/traffic/clones.json"><img src="https://img.shields.io/badge/clones-272_in_27_days-E0C170?style=for-the-badge&labelColor=07111A" alt="ficha-contigo: 272 GitHub clone events, 2026-09-29 to 2026-10-25 UTC (clones, not unique people)"></a>
+  <a href="https://github.com/andresanemic/vespi/tree/13dbe24310dab2a12eee26ad51dfdfddbff5458b"><img src="https://img.shields.io/badge/kernel-0.1.8_pin-13dbe24?style=for-the-badge&labelColor=07111A&color=E0C170" alt="Kernel: 0.1.8 source pin (commit 13dbe24)"></a>
 </p>
 
 
@@ -28,6 +28,8 @@ These projects remain separate, runnable repositories. / Estos proyectos siguen 
 <summary><b>Read in English</b></summary>
 
 <a id="english"></a>
+
+> **Kernel re-pin, 26 Oct 2026.** This project now vendors Vespi kernel **0.1.8** (release `v0.1.8-kernel`, commit `13dbe24`). Suite: 13 of 13 pass in [`docs/suite-2026-10-26.txt`](./docs/suite-2026-10-26.txt). Mentions of 0.1.6 below describe the 2026-10-11 capture.
 
 **Ficha Contigo gives a patient a visible say over who may open each part of a clinical record, for what purpose and for how long.**
 
@@ -124,7 +126,7 @@ The recorded walkthrough covers an in-scope access, blocks for missing or excess
 
 Ficha Contigo is one of the functional projects built on [Vespi](https://github.com/andresanemic/vespi) with [Lore Plugin](https://github.com/andresanemic/lore-plugin). It consumes Vespi's kernel without changing it. The project uses the kernel for bounded authority, permission checks, receipts and verification primitives. Its patient-facing language translates kernel states such as `blocked` and `verified` into Spanish reasons and outcomes. The emergency mandate and the obligation to leave a human review open belong to Ficha Contigo's project layer, not to kernel 0.1.3. Its zero-knowledge demonstration is labeled simulated; the kernel verifier for that capability was deferred to 0.1.4.
 
-**What this relationship means.** The project was built with Lore Plugin's method (its agreement and criterion live in the project, in `acuerdo.md` and `lore/`), and its operations, authority and receipts run on the Vespi kernel 0.1.6, in the pinned copy prepared for Lore Plugin 2.5.2 (`skills/vespi/core/kernel`). That copy sits in the project as `vendor/vespi-kernel` and the suite verifies it against its `SOURCE.md`. Lore Plugin does not run inside the project. This project does not use the kernel's newer capabilities (Stellar pubnet anchors, live x402 settlement, the ZK verifier, emergency access); it exercises the core of operations, authority and receipts.
+**What this relationship means.** The project was built with Lore Plugin's method (its agreement and criterion live in the project, in `acuerdo.md` and `lore/`), and its operations, authority and receipts run on the Vespi kernel 0.1.8, in the pinned copy of the `v0.1.8-kernel` release (`vendor/vespi-kernel`, commit `13dbe24`). That copy sits in the project as `vendor/vespi-kernel` and the suite verifies it against its `SOURCE.md`. Lore Plugin does not run inside the project. This project does not use the kernel's newer capabilities (Stellar pubnet anchors, live x402 settlement, the ZK verifier, emergency access); it exercises the core of operations, authority and receipts.
 
 ## What it does not do, and what is not verified
 
@@ -160,6 +162,8 @@ Start with [How it works](./docs/HOW_IT_WORKS.md), then compare the named tests 
 <summary><b>Leer en español</b></summary>
 
 <a id="espanol"></a>
+
+> **Nueva fijación del kernel, 26 oct. 2026.** Este proyecto ahora vendoriza el kernel de Vespi **0.1.8** (release `v0.1.8-kernel`, commit `13dbe24`). Suite: 13 de 13 aprobadas en [`docs/suite-2026-10-26.txt`](./docs/suite-2026-10-26.txt). Las menciones a 0.1.6 más abajo describen la captura del 2026-10-11.
 
 <p align="center"><b>Funcionó.</b></p>
 
@@ -266,7 +270,7 @@ El recorrido registrado cubre un acceso dentro del alcance, bloqueos por falta o
 
 Ficha Contigo es uno de los proyectos funcionales construidos sobre [Vespi](https://github.com/andresanemic/vespi) con [Lore Plugin](https://github.com/andresanemic/lore-plugin). Consume el kernel de Vespi sin modificarlo. El proyecto usa el kernel para autoridad acotada, comprobaciones de permisos, recibos y primitivas de verificación. Su lenguaje para la paciente traduce estados del kernel como `blocked` y `verified` a razones y resultados en español. El mandato de emergencia y la obligación de dejar una revisión humana abierta pertenecen a la capa de Ficha Contigo, no al kernel 0.1.3. La demostración de conocimiento cero se identifica como simulada; el verificador del kernel para esa capacidad quedó para 0.1.4.
 
-**Qué significa esta relación.** El proyecto se construyó con el método de Lore Plugin (su acuerdo y su criterio viven en el proyecto, en `acuerdo.md` y `lore/`), y sus operaciones, autoridad y recibos corren sobre el kernel de Vespi 0.1.6, en la copia fijada para Lore Plugin 2.5.2 (`skills/vespi/core/kernel`). Esa copia está en el proyecto como `vendor/vespi-kernel` y la suite la verifica contra su `SOURCE.md`. Lore Plugin no corre dentro del proyecto. Este proyecto no usa las capacidades nuevas del kernel (anclas Stellar pubnet, liquidación x402 en vivo, el verificador ZK, el acceso de emergencia); ejerce el núcleo de operaciones, autoridad y recibos.
+**Qué significa esta relación.** El proyecto se construyó con el método de Lore Plugin (su acuerdo y su criterio viven en el proyecto, en `acuerdo.md` y `lore/`), y sus operaciones, autoridad y recibos corren sobre el kernel de Vespi 0.1.8, en la copia fijada del release `v0.1.8-kernel` (`vendor/vespi-kernel`, commit `13dbe24`). Esa copia está en el proyecto como `vendor/vespi-kernel` y la suite la verifica contra su `SOURCE.md`. Lore Plugin no corre dentro del proyecto. Este proyecto no usa las capacidades nuevas del kernel (anclas Stellar pubnet, liquidación x402 en vivo, el verificador ZK, el acceso de emergencia); ejerce el núcleo de operaciones, autoridad y recibos.
 
 ## Lo que no hace y lo que no está verificado
 

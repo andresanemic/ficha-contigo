@@ -1,5 +1,7 @@
 # Evidence
 
+> **2026-10-26:** re-pinned to Vespi kernel 0.1.8 (release `v0.1.8-kernel`, commit `13dbe24`); [`suite-2026-10-26.txt`](./suite-2026-10-26.txt) reports 13 of 13 pass. The records below describe the 2026-10-11 capture. · **26 oct. 2026:** nueva fijación al kernel de Vespi 0.1.8; 13 de 13 aprobadas. Los registros de abajo describen la captura del 2026-10-11.
+
 ## Current suite
 
 The recorded run of 2026-10-11 reports **13 tests, 13 pass, 0 skipped**, on Node v24.15.0. It ran in a clean clone of the project, with an empty HOME and no network, against the kernel copied into the project under `vendor/vespi-kernel` and checked module by module against its `SOURCE.md` (Vespi 0.1.6, commit `39d4573`). The full output is in [`suite-2026-10-11.txt`](suite-2026-10-11.txt).
